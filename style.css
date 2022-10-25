@@ -3,50 +3,154 @@
 }
 
 body {
+  padding: 0;
   margin: 0;
-  padding: 4em;
-  font: 100% Righteous, Helvetica, sans-serif;
+  font: 100% Poppins, Helvetica, sans-serif;
   background-color: #ffbf69;
-  background-size: cover;
-  background-position: center;
 }
 
-.pop-it-links {
-  height: 20%;
-  margin: 0.3em;
+button {
+  font-weight: 700;
+  margin-top: 2em;
+  padding: 1em 2em;
+  border: none;
+  transition: 0.3s;
+}
+button:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+header {
+  padding: 2em;
+}
+header .pop-it-links {
+  margin: 0 1.5em;
   padding: 0;
   display: flex;
   list-style: none;
 }
-.pop-it-links .main-link {
-  flex: 2;
+header .pop-it-links .link {
+  transition: 0.3s;
 }
-.pop-it-links .side-link {
-  padding-left: 6em;
+header .pop-it-links .link:hover {
+  cursor: pointer;
+  color: white;
+}
+header .pop-it-links .main-link {
+  flex: 1;
+}
+header .pop-it-links .side-link {
+  margin: 0 3em;
 }
 
 section.main-section {
-  height: 100%;
-  position: absolute;
-  z-index: 1;
+  height: 100vh;
   background-image: url("./assets/background.png");
   background-position: center;
-  background-size: cover;
+  background-size: 1200px;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
 }
 section.main-section .main-container {
   width: 50%;
-  margin: 8em 2em 0;
+  margin: 0 3em;
+  padding: 6em 0;
   color: white;
 }
 section.main-section .main-container .main-header {
-  font-size: 90px;
+  font-size: 10em;
+  letter-spacing: 3px;
   margin: 0;
 }
+section.main-section .main-container .main-text {
+  margin-right: 6em;
+}
+section.main-section .main-container .main-btn {
+  background-color: #cbf3f0;
+}
 
-.btn {
-  margin-top: 2em;
-  padding: 1em 2em;
-  border: none;
+section.second-section {
+  height: 300px;
+  padding: 2em 10em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: white;
+  text-align: center;
+}
+section.second-section .section-header {
+  margin: 0;
+}
+section.second-section .section-text {
+  font-weight: 300;
+}
+
+section.third-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #cbf3f0;
+  text-align: center;
+}
+section.third-section .section-header {
+  margin-top: 3em;
+}
+section.third-section .contents {
+  display: flex;
+}
+section.third-section .contents .content {
+  margin: 2em 4em;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+section.third-section .contents .content .content-image {
+  width: 200px;
+}
+section.third-section .contents .content .section-btn {
+  background-color: #ffbf69;
+}
+
+section.fourth-section {
+  background-image: url("./assets/bg-grid.png");
+  background-position: center;
+  background-size: cover;
+  background-color: white;
+  padding: 6em 4em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.fourth-section .contents {
+  display: flex;
+  flex-direction: column;
+  padding: 3em;
+}
+section.fourth-section .contents .section-text {
+  font-weight: 300;
+}
+section.fourth-section .content-image {
+  width: 400px;
+}
+
+footer .footer-pop-it-links {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 2em;
+  background-color: #333;
+  margin: 0;
+  color: white;
+}
+footer .link {
+  transition: 0.3s;
+}
+footer .link:hover {
+  cursor: pointer;
+  transform: scale(1.2);
 }
 
 /*# sourceMappingURL=style.css.map */
