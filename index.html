@@ -14,13 +14,14 @@
 
 <body>
 
-  <header>
+  <header class="header">
+    <input class="burger" type="checkbox" aria-label="Open the menu">
     <nav class="pop-it-nav">
-      <ul class="pop-it-links">
-        <li class="link main-link">POP IT</li>
-        <li class="link side-link">Oyna</li>
-        <li class="link side-link">Öğren</li>
-        <li class="link side-link">Eğlen</li>
+      <button id="pop" class="main-link">POP IT</button>
+      <ul class="menu pop-it-links">
+        <li class="link side-link"><a href="#oyna">Oyna</a></li>
+        <li class="link side-link"><a href="#footer">Öğren</a></li>
+        <li class="link side-link"><a href="#pop">Eğlen</a></li>
       </ul>
     </nav>
   </header>
@@ -42,7 +43,7 @@
       inventore eveniet veritatis commodi voluptatum consequuntur praesentium eum delectus accusamus aliquam voluptatem
       vel repellat magnam.</p>
   </section>
-  <section class="third-section">
+  <section id="oyna" class="third-section">
     <h1 class="section-header">Lorem asdfdf</h1>
     <div class="contents">
       <div class="content">
@@ -73,7 +74,7 @@
     <img class="content-image" src="./assets/photo.jpg" alt="photo">
   </section>
 
-  <footer>
+  <footer id="footer">
     <nav>
       <ul class="footer-pop-it-links">
         <li class="link">POP IT</li>
