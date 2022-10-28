@@ -15,13 +15,17 @@
 <body>
 
   <header class="header">
-    <input class="burger" type="checkbox" aria-label="Open the menu">
+    <div class="burger">
+      <div class="bar bar1"></div>
+      <div class="bar bar2"></div>
+      <div class="bar bar3"></div>
+    </div>
     <nav class="pop-it-nav">
       <button id="pop" class="main-link">POP IT</button>
       <ul class="menu pop-it-links">
-        <li class="link side-link"><a href="#oyna">Oyna</a></li>
-        <li class="link side-link"><a href="#footer">Öğren</a></li>
-        <li class="link side-link"><a href="#pop">Eğlen</a></li>
+        <li class="link side-link"><a href="#">Play</a></li>
+        <li class="link side-link"><a href="#">Learn</a></li>
+        <li class="link side-link"><a href="#">Fun</a></li>
       </ul>
     </nav>
   </header>
@@ -29,47 +33,56 @@
   <section class="main-section">
     <div class="main-container">
       <h1 class="main-header">POP IT!</h1>
-      <p class="main-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos, molestias ratione?
-        Sapiente cupiditate
-        fugiat in quasi soluta error corrupti aspernatur assumenda omnis optio vel nihil quos provident, ad nam quod?
+      <p class="main-text">A Pop-It (also known as Go Pop and Last One Lost) is a fidget toy consisting of a
+        usually-brightly colored silicone tray with pokable bubbles, similar to bubble wrap, that can be flipped and
+        re-used. They come in a variety of colors, shapes, and sizes, and are marketed as a stress-reliever. They rose
+        in popularity in the spring of 2021 due to TikTok influencers as well as boredom and stress attributed to the
+        COVID-19 pandemic.
       </p>
-      <button class="main-btn">OYNA</button>
+      <button class="main-btn">PLAY</button>
     </div>
   </section>
-  <section class="second-section">
-    <h1 class="section-header">Lorem asdfsdf324?</h1>
-    <p class="section-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Temporibus quos iure perferendis
-      earum, alias, optio
-      inventore eveniet veritatis commodi voluptatum consequuntur praesentium eum delectus accusamus aliquam voluptatem
-      vel repellat magnam.</p>
+  <section id="learn1" class="second-section">
+    <h1 class="section-header">Did you know?</h1>
+    <p class="section-text">The mechanical design or the Pop-It bubble popper was originally invented in 1975 by Theo
+      and Ora Coster of Theora Concepts: a married Israeli couple who had invented many games including Guess Who? and
+      Zingo! Incidentally, Theo was a former classmate of Anne Frank.</p>
   </section>
-  <section id="oyna" class="third-section">
-    <h1 class="section-header">Lorem asdfdf</h1>
-    <div class="contents">
-      <div class="content">
+  <section id="learn2" class="third-section">
+    <h1 class="section-header">Why is Pop It so popular?</h1>
+    <div class="contents carousel">
+      <div class="content carousel-item">
         <img class="content-image" src="./assets/square.png" alt="square">
-        <p class="section-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        <button class="section-btn">OYNA</button>
+        <p class="section-text">Pop its come in 4 shapes circle, square, octagon, and heart with rainbow color, adding a
+          fun splash to every pop!</p>
+        <button class="section-btn">PLAY</button>
       </div>
-      <div class="content">
+      <div class="content carousel-item carousel-item-hidden">
         <img class="content-image" src="./assets/amongus.png" alt="amongus">
-        <p class="section-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        <button class="section-btn">OYNA</button>
+        <p class="section-text">Fidget toys, in general, help kids release nervous or restless energy, And kids could be
+          subconsciously using the Pop It!
+          as a stress reliever.</p>
+        <button class="section-btn">PLAY</button>
       </div>
-      <div class="content">
+      <div class="content carousel-item carousel-item-hidden">
         <img class="content-image" src="./assets/round.png" alt="round">
-        <p class="section-text">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        <button class="section-btn">OYNA</button>
+        <p class="section-text">Although they may provide a momentary distraction from symptoms, they are unlikely to
+          help treat anxiety and appear to be less effective than other options, such as therapy.</p>
+        <button class="section-btn">PLAY</button>
       </div>
+      <div class="carousel-actions">
+        <button class="carousel-button-prev" aria-label="Previous Slide">-</button>
+        <button class="carousel-button-next" aria-label="Next Slide">+</button>
+      </div>
+
     </div>
   </section>
-  <section class="fourth-section">
+  <section id="learn3" class="fourth-section">
     <div class="contents">
-      <h1 class="section-header">asdghasd</h1>
-      <p class="section-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel nesciunt, magni qui laborum
-        soluta facilis
-        asperiores eveniet distinctio tempore ut neque consectetur omnis voluptates rerum sunt aliquid eos. Nostrum,
-        pariatur!</p>
+      <h1 class="section-header">When was Pop It invented?</h1>
+      <p class="section-text">It was introduced as a logic game for the first time by FoxMind in 2014 during the
+        Nuremberg Toy Fair followed by the New York Toy Fair. The company marketed the product as a logic game that is
+        quick and fun to play and fidget with. </p>
     </div>
     <img class="content-image" src="./assets/photo.jpg" alt="photo">
   </section>
@@ -77,10 +90,10 @@
   <footer id="footer">
     <nav>
       <ul class="footer-pop-it-links">
-        <li class="link">POP IT</li>
-        <li class="link">Oyna</li>
-        <li class="link">Öğren</li>
-        <li class="link">Eğlen</li>
+        <li class="link"><a href="#pop">POP IT</a></li>
+        <li class="link"><a href="#learn1">Play</a></li>
+        <li class="link"><a href="#learn2">Learn</a></li>
+        <li class="link"><a href="#learn3">Fun</a></li>
       </ul>
     </nav>
   </footer>
