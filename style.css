@@ -94,7 +94,7 @@ footer .link:hover {
 
 section.main-section {
   padding-bottom: 2em;
-  height: 100%;
+  height: 100vh;
   background-image: url("./assets/background.png");
   background-position: right;
   background-size: 80%;
@@ -129,7 +129,7 @@ section.main-section .main-container .main-btn {
 
 section.second-section {
   padding: 2em;
-  height: 50%;
+  height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;

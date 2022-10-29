@@ -99,7 +99,7 @@ footer {
 section.main-section {
   padding-bottom: 2em;
   // height: 90vh;
-  height: 100%;
+  height: 100vh;
   background-image: url("./assets/background.png");
   background-position: right;
   background-size: min(80%);
@@ -134,7 +134,7 @@ section.main-section {
 
 section.second-section {
   padding: 2em;
-  height: 50%;
+  height: 35vh;
   display: flex;
   align-items: center;
   justify-content: center;
