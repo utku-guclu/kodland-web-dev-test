@@ -121,7 +121,7 @@ section.main-section {
       }
     }
     .main-text {
-      width: 80%;
+      width: 75%;
       margin-right: 6em;
       text-shadow: 1px 1px 3px rgb(255, 254, 255);
       color: $primary-color;
@@ -214,7 +214,7 @@ div.burger {
   float: right;
   z-index: 45;
   top: 1.4em;
-  right: 1em;
+  right: 3em;
   display: none;
   cursor: pointer;
   .bar1,
@@ -247,10 +247,11 @@ div.burger {
   display: none;
 }
 .carousel-item-visible {
-  animation: fade-visibility 0.5s;
+  // animation: fade-visibility 1.5s;
   display: block;
 }
 
+$breakpoint-phone: 720px;
 $breakpoint-tablet: 800px;
 $breakpoint-bg: 1200px;
 
@@ -262,10 +263,10 @@ $breakpoint-bg: 1200px;
 @media (max-width: $breakpoint-bg) {
   section {
     overflow: hidden;
-    .main-section {
-      background-attachment: local;
-    }
   }
+  // .main-section {
+  //   background-attachment: local !important;
+  // }
   .carousel {
     display: flex;
     flex-direction: column;
@@ -386,6 +387,23 @@ $breakpoint-bg: 1200px;
     .contents .section-header {
       text-align: center;
     }
+  }
+}
+
+@media (max-width: $breakpoint-phone) {
+  .main-section {
+    // background-image: none !important;
+    background-size: cover !important;
+    background-position: 170% !important;
+    transition: all ease 3s;
+  }
+  .section-text,
+  .main-text {
+    width: auto !important;
+  }
+  .carousel-button-next,
+  .carousel-button-prev {
+    transform: translateX(0) !important;
   }
 }
 

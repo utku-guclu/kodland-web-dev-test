@@ -118,7 +118,7 @@ section.main-section .main-container .main-header:hover {
   cursor: pointer;
 }
 section.main-section .main-container .main-text {
-  width: 80%;
+  width: 75%;
   margin-right: 6em;
   text-shadow: 1px 1px 3px rgb(255, 254, 255);
   color: #333;
@@ -206,7 +206,7 @@ div.burger {
   float: right;
   z-index: 45;
   top: 1.4em;
-  right: 1em;
+  right: 3em;
   display: none;
   cursor: pointer;
   /* Rotate first bar */
@@ -238,7 +238,6 @@ div.burger .change.bar3 {
 }
 
 .carousel-item-visible {
-  animation: fade-visibility 0.5s;
   display: block;
 }
 
@@ -249,9 +248,6 @@ div.burger .change.bar3 {
 @media (max-width: 1200px) {
   section {
     overflow: hidden;
-  }
-  section .main-section {
-    background-attachment: local;
   }
   .carousel {
     display: flex;
@@ -359,6 +355,21 @@ div.burger .change.bar3 {
   }
   section.fourth-section .contents .section-header {
     text-align: center;
+  }
+}
+@media (max-width: 720px) {
+  .main-section {
+    background-size: cover !important;
+    background-position: 170% !important;
+    transition: all ease 3s;
+  }
+  .section-text,
+.main-text {
+    width: auto !important;
+  }
+  .carousel-button-next,
+.carousel-button-prev {
+    transform: translateX(0) !important;
   }
 }
 @-webkit-keyframes fade-visibility {

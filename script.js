@@ -80,5 +80,6 @@ function carousel() {
   slides[position].classList.add("carousel-item-visible");
 }
 
-// auto slide
-// const autoSlide = setInterval(nextSlide, 10000);
+// auto slide // smallScreen
+//=> unabled animations for carousel, because couldn't solve how to stop interval on desktop size
+const autoSlide = setInterval(nextSlide, 3000);
